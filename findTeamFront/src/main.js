@@ -1,9 +1,16 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
-import { NavBar,Button} from 'vant';
+import { NavBar} from 'vant';
 import 'vant/lib/index.css';
+import * as VueRouter from 'vue-router'
+import routes from "./config/route";
+
 
 const app = createApp(App)
-app.use(NavBar, Button);
+const router = VueRouter.createRouter( {
+    history: VueRouter.createWebHashHistory(),
+    routes,
+})
+app.use(router)
+app.use(NavBar);
 app.mount('#app')

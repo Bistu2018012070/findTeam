@@ -1,10 +1,12 @@
 <template>
-主页
+  <search-page/>
 </template>
 
 <script>
+import SearchPage from "./SearchPage.vue";
 export default {
-  name: "Index"
+  name: "Index",
+  components: {SearchPage}
 }
 </script>
 
