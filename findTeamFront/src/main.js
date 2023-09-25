@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { NavBar} from 'vant';
+import { Toast } from 'vant';
 import 'vant/lib/index.css';
 import * as VueRouter from 'vue-router'
 import routes from "./config/route";
@@ -13,4 +14,5 @@ const router = VueRouter.createRouter( {
 })
 app.use(router)
 app.use(NavBar);
+app.use(Toast);
 app.mount('#app')

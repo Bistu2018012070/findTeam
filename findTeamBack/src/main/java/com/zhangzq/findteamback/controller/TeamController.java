@@ -1,4 +1,4 @@
-package com.zhangzq.findteamback.constant.controller;
+package com.zhangzq.findteamback.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
