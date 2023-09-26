@@ -1,6 +1,6 @@
 <template>
   <van-nav-bar
-      title="标题"
+      title="找朋友"
       left-arrow
       @click-left="onClickLeft"
       @click-right="onClickRight"
@@ -30,7 +30,7 @@ const onClickLeft = () => {
   router.back()
 };
 const onClickRight = () => {
-  router.push('/')
+  router.push('/search')
 };
 </script>
 
